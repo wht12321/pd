@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--导入css文件-->
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body onload="sjhq()">
+<!--引入header模块-->
+<header>
+        <iframe src="header.html" frameborder="0" scrolling="no" class="my_header"></iframe>
+</header>
+
+
+    <div style="background:url(../image/ht5body/huaban.jpg) no-repeat;background-size:100% 100%">
+        <div>
+            <!--头像-->
+            <div id="uhead">
+                <img src="../image/uhead/moren.jpg">
+            </div>
+            <!--修改头像-->
+            <div id="gaiuhead">
+                <b>修改头像（仅限.JPG）：</b><input id="chufa" type="file" accept="image/jpeg" disabled>
+                <div id="dianjichufa"></div>
+                <p id="huiyuantishi">亲还不是<b>"Premium高级会员"</b>暂时还无法修改头像哦~</p>
+            </div>
+            <!--糖果-->
+            <div id="tangguo">
+                <b>糖果:</b>
+                <span>5000</span>
+            </div>
+            <!--个人简介-->
+            <div id="jianjie">
+                <p><b>个人简介：</b></p>
+                <textarea name="" cols="125" rows="3"></textarea>
+            </div>
+
+            <span id="ziliao">
+                <div>
+                    <b>用户名：&nbsp;</b><input type="text" placeholder="用户名：只能输入中文英文数字空格"  maxlength="20" onkeyup="value=value.replace(/[^\a-\z\A-\Z0-9\u4E00-\u9FA5\ ]/g,'')" onpaste="value=value.replace(/[^\a-\z\A-\Z0-9\u4E00-\u9FA5\ ]/g,'')" oncontextmenu = "value=value.replace(/[^\a-\z\A-\Z0-9\u4E00-\u9FA5\ ]/g,'')">
+                </div>
+                <div>
+                    <b>密码：&nbsp;&nbsp;</b><input type="password" placeholder="密码：只能输入中文英文数字空格"  maxlength="20" onkeyup="value=value.replace(/[^\a-\z\A-\Z0-9\u4E00-\u9FA5\ ]/g,'')" onpaste="value=value.replace(/[^\a-\z\A-\Z0-9\u4E00-\u9FA5\ ]/g,'')" oncontextmenu = "value=value.replace(/[^\a-\z\A-\Z0-9\u4E00-\u9FA5\ ]/g,'')">
+                </div>
+                <div>
+                    <b>密保问题：</b><input type="text" placeholder="密保问题">
+                </div>
+                <div>
+                    <b>密保答案：</b><input type="text" placeholder="密保答案">
+                </div>
+                <button id="tijiao">提交修改</button>
+            <span>
+
+            <div id="texiao">
+                    <button id="button1">我的作品</button>
+                    <button id="button2">我的关注</button>
+                    <button id="button3">我的收藏</button>
+            </div>
+        </div>
+        <a href="javascript:dianji()"><img src="../image/ht5body/top1.png"></a>
+        <p><img src="../image/ht5body/zuibadudu.png">联系我们</p>
+    </div>
+
+
+
+<!--引入footer模块-->
+<footer>
+        <iframe src="footer.html" frameborder="0" scrolling="no" class="my_footer"></iframe>
+</footer>
+<!--导入js文件-->
+<script src="../js/home.js"></script>
+
+</body>
+</html>

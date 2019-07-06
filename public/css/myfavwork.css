@@ -1,0 +1,98 @@
+/*html背景色*/
+html{
+    background:#e4e7ee;
+    /* background-image:url(../image/ht5body/yinhua.gif) */
+}
+/*主体部分大div*/
+body>div{
+    width:1000px;
+    margin:0px auto;
+    background:#fff;
+    border-radius:3px;
+    margin-top:10px;
+    position:relative;
+}
+/*大div内部嵌套控制边距的div*/
+body>div>div{
+    margin:10px;
+    padding:10px 0px;
+}
+/*包裹头像的div*/
+#uhead{
+    width:150px;
+    height:130px;
+    position:relative;
+    border-right:dashed 1px #000;
+}
+/*头像*/
+#uhead>img{
+    height:98%;
+    border-radius:50%;
+    position:absolute;
+}
+/*文字：我的收藏*/
+h1{
+    position:absolute;
+    top:30px;
+    right:230px;
+    font:bold italic 100px 宋体;
+}
+/*包含喜欢作品信息的模块*/
+body>div>div>span{
+    display:block;
+    border-top:dashed 1px #000;
+    border-bottom:dashed 1px #000;
+    padding:10px 0px;
+}
+/*每一个喜欢作品的批量模块*/
+span>div{
+    display:inline-block;
+    width:230px;
+    margin:5px;
+}
+/*嵌套每一个喜欢作品图片的div*/
+span>div>div{
+    width:230px;
+    margin-bottom:10px;
+    border-bottom:dotted 1px #666;
+    float:left;
+}
+/*被嵌套的每一个喜欢作品图片*/
+span>div>div>a>img{
+    width:100%;
+    max-height:250px;
+    overflow:hidden;
+}
+/*移除按钮*/
+span>div>button{
+    height:30px;
+    width:70px;
+    margin-left:80px;
+}
+/*fixed部分*/
+body>div>a>img{
+    height:200px;
+    position:fixed;
+    left:1600px;
+    top:500px;
+}
+body>div>p{
+    position:fixed;
+    left:1600px;
+    top:750px;
+    height:127px;
+    width:100px;
+    border:solid 1px #000;
+    border-radius:5px;
+    text-align:center;
+}
+body>div>p>img{
+    height:100px;
+    margin-top:2px;
+}
+/*火箭:hover动画*/
+@keyframes huojiandong{
+    0%{transform:translateY(0px);}
+    50%{transform:translateY(-5px);}
+    10%{transform:translateY(0px);}
+}

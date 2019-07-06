@@ -1,0 +1,60 @@
+/*html透明背景色*/
+html{
+    background-color:transparent;
+}
+/*最外层包裹1000px*/
+body>div{
+    width:1000px;
+    height:293px;
+    background-color: #fff;
+    border: 1px solid #d6dee5;
+    margin:10px auto 20px;
+    border-radius:5px;
+}
+/*ul集的打包*/
+body>div>div:first-child{
+    display:flex;
+    justify-content:space-around;
+}
+/*ul列表*/
+ul{
+    height:235px;
+    width:168px;
+    margin-top:20px;
+}
+/*li列表*/
+li{
+    margin:5px 0px;
+    font: 14px 宋体;
+}
+/*li第一个加粗、加高*/
+ul>li:first-child{
+    font-weight:bold;
+    margin-bottom:8px;
+}
+/*大会员图片的尺寸*/
+ul>li>img{
+    width:16px;
+}
+/*共用链接a*/
+a{
+    color:#258fb8;
+}
+/*共用链接a:hover*/
+a:hover{
+    color:#eb3d85;
+}
+/*分割线*/
+hr{
+    size:1px;
+    width:97%;
+    margin:0 auto;
+    color:#999;
+}
+/*版权支持*/
+div>div:last-child{
+    text-align:center;
+    margin-top:6px;
+    font:14px 黑体;
+    color:#999;
+}

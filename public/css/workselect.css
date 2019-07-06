@@ -1,0 +1,138 @@
+/*html背景色*/
+html{
+    background:#e4e7ee;
+    /* background-image:url(../image/ht5body/yinhua.gif) */
+}
+/*主体部分大div*/
+body>div{
+    width:1000px;
+    margin:0px auto;
+    background:#fff;
+    border-radius:3px;
+    margin-top:10px;
+    position:relative;
+}
+/*大div内部嵌套控制边距的div*/
+body>div>div{
+    margin:10px;
+    padding:10px 0px;
+}
+/*热门关键词*/
+#remen>span{
+    font:bolder 30px 黑体;
+    color:#f00;
+    vertical-align:bottom;
+}
+/*热门关键词集*/
+#remen>a{
+    display:inline-block;
+    height:30px;
+    width:100px;
+    /* background:rgb(136, 136, 255); */
+    color:#fff;
+    border-radius:3px;
+    padding-top:12px;
+    font:bold 15px 黑体;
+    text-align:center;
+    margin-bottom:1px;
+    margin-right:3px;
+}
+/*热门关键词背景颜色*/
+#remen>a:nth-child(2){
+    background-color:#db1dfb;
+}
+#remen>a:nth-child(3){
+    background-color:#da1efb;
+}
+#remen>a:nth-child(4){
+    background-color:#c133f7;
+}
+#remen>a:nth-child(5){
+    background-color:#9f51f3;
+}
+#remen>a:nth-child(6){
+    background-color:#aba6bd;
+}
+#remen>a:nth-child(7){
+    background-color:#6189eb;
+}
+#remen>a:nth-child(8){
+    background-color:#3aa8e7;
+}
+#remen>a:nth-child(9){
+    background-color:#0cd1e1;
+}
+/*热门关键词hover*/
+#remen>a:hover{
+    opacity:0.5;
+}
+/*包含作品信息的模块*/
+body>div>div>span{
+    display:block;
+    border-top:dashed 5px;
+    border-bottom:dashed 5px;
+    border-image:linear-gradient(to right,rgba(255,0,0,1),rgba(190, 49, 246,0.5),rgba(58, 168, 231,0.5),rgba(12, 209, 225,0.5))10 10;
+    padding:10px 0px;
+}
+/*每一个作品的批量模块*/
+span>a{
+    display:inline-block;
+    /* height:290px; */
+    width:224px;
+    margin:5px;
+    border:3px solid #0a0a0a;
+    background:#666666;
+}
+/*嵌套每一个作品图片的div*/
+span>a>div{
+    width:224px;
+    /* height:250px; */
+    margin-bottom:10px;
+    float:left;
+}
+/*被嵌套的每一个作品图片*/
+span>a>div>img{
+    width:100%;
+    max-height:250px;
+    overflow:hidden;
+    transition:all 1s;
+}
+span>a>div>img:hover{
+    transform:scale(1.05)
+}
+/*作品图片介绍*/
+#jiansuo>a>div:last-child{
+    color:#b8e6f8;
+    size:14px;
+    font-family:幼圆;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/*fixed部分*/
+body>div>a>img{
+    height:200px;
+    position:fixed;
+    left:1600px;
+    top:500px;
+}
+body>div>p{
+    position:fixed;
+    left:1600px;
+    top:750px;
+    height:127px;
+    width:100px;
+    border:solid 1px #000;
+    border-radius:5px;
+    text-align:center;
+}
+body>div>p>img{
+    height:100px;
+    margin-top:2px;
+}
+/*火箭:hover动画*/
+@keyframes huojiandong{
+    0%{transform:translateY(0px);}
+    50%{transform:translateY(-5px);}
+    10%{transform:translateY(0px);}
+}

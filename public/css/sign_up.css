@@ -1,0 +1,144 @@
+    /*背景图片的浅入浅出*/
+    @keyframes bglook{
+        0%{opacity:0;}
+        30%{opacity:1;}
+        90%{opacity:1;}
+        100%{opacity:0;}
+   }
+   #bgimg{
+       animation:bglook 8s infinite;
+   }
+   /*背景图片的父标签*/
+   #bgimgfather{
+    position:absolute;
+    width:100%;
+    height:100%;
+   }
+   /*注册半透明模块*/
+   #signUp{
+    background:rgba(255,255,255,0.9);
+    height:550px;
+    width:364px;
+    position:absolute;
+    z-index:1;
+    top:50%;
+    left:50%;
+    margin-top:-275px;
+    margin-left:-182px;
+    border-radius:5px;
+   }
+   /*保持与注册半透明模块的边距*/
+   #signUp>div{
+    margin:50px 30px;
+   }
+   /*站标100%填充*/
+   #picEvEbd{
+    width:100%;
+   }
+   /*文本：让创作变得更有趣*/
+   #wen1{
+    color:#757c80;
+    font:bold 8px 宋体;
+    text-align:center;
+    margin-bottom:20px;
+   }
+   /*文本：立即注册*/
+   #wen2{
+    color: #757c80;
+    font:bolder 22px 黑体;
+    text-align:center;
+    margin-bottom:20px;
+   }
+   /*文本框：用户名*/
+   #input1{
+    box-sizing:border-box;
+    height:40px;
+    width:100%;
+    border:solid 1px rgb(233, 230, 230);
+    border-top-left-radius:3px;
+    border-top-right-radius:3px;
+    padding:5px;
+    font:16px 宋体;
+   }
+   /*文本框：密码*/
+   #input2{
+    box-sizing:border-box;
+    height:40px;
+    width:100%;
+    border:solid 1px rgb(233, 230, 230);
+    border-bottom-left-radius:3px;
+    border-bottom-right-radius:3px;
+    padding:5px;
+    font:16px 宋体;
+   }
+   /*用户名/密码文本框内占位符placeholder的样式*/
+   #input1::-webkit-input-placeholder,#input2::-webkit-input-placeholder{
+    color:#ced0d1;
+   }
+   /*按钮：注册*/
+   #button1{
+    width:100%;
+    height:40px;
+    margin:8px 0px 15px;
+    color:#fff;
+    background:#25c6ff;
+    border-radius:3px;
+    border:0px;
+    font-size:18px;
+   }
+   /*按钮：注册的hover样式*/
+   #button1:hover{
+    cursor:pointer;
+   }
+   /*其他方式*/
+   #qita{
+    box-sizing:border-box;
+    height:100px;
+    width:100%;
+    border-radius:2px;
+    border:solid 1px #dfebf2;
+    background:#fff;
+    padding:20px;
+   }
+   /*文本：用其他方式开始*/
+   #wen3{
+    color:#666666;
+    text-align:center;
+    font:bold 12px 宋体;
+    margin-bottom:10px;
+   }
+   /*三种其他方式的父级*/
+   #three{
+    display:flex;
+    justify-content:space-between;
+   }
+   /*三种其他方式的通用样式*/
+   #three>a{
+    display:block;
+    height:40px;
+    width:80px;
+    border-radius:3px;
+   }
+   /*方式一：背景颜色/背景图片*/
+   #three>a:nth-child(1){
+    background:#dc4e41 no-repeat url(../image/ht5body/google.png) center center;
+    background-size:30%;
+   }
+   /*方式二：背景颜色/背景图片*/
+   #three>a:nth-child(2){
+    background:#385185 no-repeat url(../image/ht5body/facebook.png) center center;
+    background-size:30%;
+   }
+   /*方式三：背景颜色/背景图片*/
+   #three>a:nth-child(3){
+    background:#e32429 no-repeat url(../image/ht5body/weibo.png) center center;
+    background-size:30%;
+   }
+   /*提示定位*/
+   #unametishi{
+       position:absolute;
+       top:210px;
+       right:40px;
+       color:red;
+   }
+   

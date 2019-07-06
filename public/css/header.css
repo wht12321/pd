@@ -1,0 +1,126 @@
+/*共用链接a*/
+a{
+    color:#258fb8;
+}
+/*共用链接a:hover*/
+a:hover{
+    color:#eb3d85;
+}
+/*白底div*/
+body>div{
+    width:100%;
+    height:116px;
+    background:#fff;
+    border-bottom:solid 2px rgb(173, 173, 173);
+    background-image:url(../image/ht5body/yinhua.gif);
+    margin-bottom:100px;
+}
+/*居中显示div 1000px*/
+body>div>div{
+    width:1000px;
+    height:100%;
+    margin:0 auto;
+    position:relative;
+}
+/*右侧第一行*/
+#right-top{
+    float:right;
+    clear:both;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+/*右侧第一行：显示文字ul部分*/
+#xian>li{
+    float:left;
+    margin-left:12px;
+    font-size:14px;
+    font-weight:bold;
+}
+/*右侧第一行：显示标签a第一个特殊颜色*/
+#xian>li:first-child>a{
+    color:#ff7e48;
+}
+/*右侧第一行：隐藏文字ul部分*/
+#yin{
+    position:absolute;
+    top:38px;right:0px;
+    background:#fff;
+    border:solid 1px #becad7;
+    display:none;
+}
+/*右侧第一行：隐藏文字li部分*/
+#yin>li{
+    padding:5px;
+}
+/*右侧第一行：隐藏标签a部分*/
+#yin>li>a{
+    color:#a0a2a5;
+}
+/*右侧第一行：隐藏标签a:hover*/
+#yin>li>a:hover{
+    color:#4887e4;
+}
+/*右侧第一行：隐藏标签a最后一个特殊颜色*/
+#yin>li:last-child>a{
+    color:#ff7e48;
+}
+/*右侧第二行：联系我们*/
+#lianxi{
+    float:right;
+    clear:both;
+    font-size:14px;
+    font-weight:bold;
+}
+/*右侧第三行*/
+#sou{
+    float:right;
+    clear:both;
+}
+/*右侧第三行：搜索框*/
+#sou>input{
+    padding-left:5px;
+    height:25px;
+    width:186px;
+    margin-top:10px;
+    float:left;
+}
+/*右侧第三行：按钮*/
+#sou>button{
+    height:29px;
+    width:50px;
+    border:solid 1px #a9a9a9;
+    float:left;
+    margin-top:10px;
+    background:#becad7 url(../image/ht5body/search.png) no-repeat;
+    background-position:center center;
+}
+/*右侧第三行：按钮，悬停时*/
+#sou>button:hover{
+    background:#f3eeee url(../image/ht5body/search.png) no-repeat; 
+    background-position:center center;   
+}
+/*左侧第一行：左侧站标*/
+body>div>div>img{
+    height:70%;
+}
+/*左侧第二行*/
+#zuo2{
+    float:left;
+    position:absolute;
+    bottom:10px;
+}
+/*左侧第二行：li*/
+#zuo2>ul>li{
+    float:left;
+    margin-left:12px;
+    font-size:14px;
+    font-weight:bold;
+}
+/*左侧第二行：img*/
+#zuo2>ul>li>img{
+    vertical-align: middle;
+}
+/*左侧第二行：a标签*/
+#zuo2>ul>li>a{
+    vertical-align: middle;
+}
